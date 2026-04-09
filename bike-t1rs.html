@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="logo-circle.jpg" type="image/jpeg">
+<link rel="icon" href="logo.jpg" type="image/jpeg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Colnago T1Rs — The Cycling Syndicate Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -11,7 +11,9 @@
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#050505}::-webkit-scrollbar-thumb{background:#c9a84c;border-radius:3px}
 :root{--gold:#c9a84c;--gold-light:#e0c374;--gold-glow:rgba(201,168,76,.35);--black:#050505;--card:#0e0e0e;--white:#f0f0f0;--dim:rgba(240,240,240,.6);--muted:rgba(240,240,240,.3);--font-h:'Bebas Neue',sans-serif;--ease:cubic-bezier(.4,0,.2,1)}
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1rem 4%;background:rgba(5,5,5,.92);backdrop-filter:blur(20px)}
-.nb{font-family:var(--font-h);font-size:1.4rem;color:var(--gold);letter-spacing:.06em}
+.nb{font-family:var(--font-h);font-size:1.4rem;color:var(--gold);letter-spacing:.06em;flex-shrink:0}
+.nav-title{font-family:var(--font-h);font-size:clamp(.7rem,1.3vw,1rem);letter-spacing:.12em;background:linear-gradient(90deg,rgba(240,240,240,.3),#f0f0f0,#e0c374,#f0f0f0,rgba(240,240,240,.3));background-size:300% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shine 4s ease infinite;position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap}
+@keyframes shine{0%{background-position:100% 0}100%{background-position:-100% 0}}
 .nl{display:flex;gap:2rem}.nl a{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);transition:color .3s}.nl a:hover{color:var(--gold)}
 .back{font-size:.75rem;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
 
@@ -80,7 +82,8 @@ footer{padding:2rem 4% 1rem;background:#0a0a0a;border-top:1px solid rgba(255,255
 <body>
 
 <nav>
-  <a href="index.html" class="nb"><img src="logo.jpg" alt="The Cycling Syndicate Hub" style="height:36px;border-radius:4px"></a>
+  <a href="index.html" class="nb"><img src="logo.jpg" alt="The Cycling Syndicate Hub" style="height:48px;border-radius:4px"></a>
+  <span class="nav-title">THE CYCLING SYNDICATE HUB</span>
   <div class="nl"><a href="index.html">Inicio</a><a href="index.html#bikes">Bicicletas</a><a href="index.html#history">Historia</a></div>
   <a href="bikes-track.html" class="back">← Volver</a>
 </nav>
